@@ -1,2 +1,2 @@
 # SCP: Containment Breach
-![](github/cb.gif)
+![](github/cb2.gif)
