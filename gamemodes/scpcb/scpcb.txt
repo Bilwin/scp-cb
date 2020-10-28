@@ -1,0 +1,7 @@
+"scpcb"
+{
+	"base"		"base"
+	"title"		"SCP: CB"
+	"maps"		"^cb_"
+	"menusystem"	"1"
+}
