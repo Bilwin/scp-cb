@@ -1,2 +1,2 @@
-# scp-cb
-Init state
+# SCP: Containment Breach
+Init stateb
