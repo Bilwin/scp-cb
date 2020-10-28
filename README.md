@@ -1,2 +1,2 @@
 # SCP: Containment Breach
-Init stateb
+![](github/cb.gif)
