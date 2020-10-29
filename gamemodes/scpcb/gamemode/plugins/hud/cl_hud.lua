@@ -35,12 +35,12 @@ hook.Add("HUDPaint", "SCP.CB.BasicHud", function()
 
     surface.SetDrawColor(255, 255, 255, 11);
     surface.SetMaterial(gradient);
-    surface.DrawTexturedRect(ScrW()*.04, ScrH()/1.15, ScrW()*.157, ScrH()*.035);
-    surface.DrawTexturedRect(ScrW()*.04, ScrH()/1.1, ScrW()*.157, ScrH()*.035);
+    surface.DrawTexturedRect(ScrW()*.04, ScrH()/1.15, ScrW()*.157, ScrH()*.025);
+    surface.DrawTexturedRect(ScrW()*.04, ScrH()/1.1, ScrW()*.157, ScrH()*.025);
 
     surface.SetDrawColor(255, 255, 255, 55);
-    surface.DrawOutlinedRect( ScrW()*.04, ScrH()/1.15, ScrW()*.157, ScrH()*.035, 2 );
-    surface.DrawOutlinedRect( ScrW()*.04, ScrH()/1.1, ScrW()*.157, ScrH()*.035, 2 );
+    surface.DrawOutlinedRect( ScrW()*.04, ScrH()/1.15, ScrW()*.157, ScrH()*.025, 2 );
+    surface.DrawOutlinedRect( ScrW()*.04, ScrH()/1.1, ScrW()*.157, ScrH()*.025, 2 );
 
 	surface.SetDrawColor(255, 255, 255, 255)
 	surface.SetMaterial(scp_blink)
@@ -61,13 +61,13 @@ hook.Add("HUDPaint", "SCP.CB.BasicHud", function()
     surface.SetMaterial(scp_bars)
 
     for i=2,Clamp(23 * Clamp((SCPBlink_GetBlinkTimeLeft() / GetConVarNumber(scp_cb.prefix .. "blinking_interval")), 0, 1), 0, 22) do
-        surface.DrawTexturedRect(ScrW()*.0265 + ScrW()*.0074 * i, ScrH()/1.147, ScrW()*.007, ScrH()*.031)
+        surface.DrawTexturedRect(ScrW()*.0265 + ScrW()*.0074 * i, ScrH()/1.147, ScrW()*.007, ScrH()*.02)
     end
 
     surface.SetDrawColor(125, 125, 125, 222)
 
     for i=2,Clamp(LocalPlayer().Stamina, 0, 22) do
-        surface.DrawTexturedRect(ScrW()*.0265 + ScrW()*.0074 * i, ScrH()/1.097, ScrW()*.007, ScrH()*.031)
+        surface.DrawTexturedRect(ScrW()*.0265 + ScrW()*.0074 * i, ScrH()/1.097, ScrW()*.007, ScrH()*.02)
     end
 end)
 
